@@ -30,7 +30,7 @@ def submit_form():
 
             server.send_message(msg)
             server.quit()
-            return 'Your Message sent successfully!'
+            return render_template('success.html')
         else:
             return 'All fields are required.'
 if __name__ == '__main__':
